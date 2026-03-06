@@ -1,0 +1,287 @@
+/* assets/css/custom.css */
+
+/* Pastel palette (svipað og myndin þín) */
+:root{
+  --pink:  #f3a0b4;
+  --pink2: #f7b7c8;
+  --blue:  #7ec8f0;
+  --mint:  #6fc7b6;
+  --lav:   #b79adf;
+
+  --text:  #1f2937;   /* dökkur texti á ljósum bakgrunni */
+  --muted: #4b5563;
+  --white: #ffffff;
+
+  --accent: #ff4da6;  /* takkarnir */
+  --accentHover: #ff79c6;
+  --footerBg: #121222; /* bara neðst */
+}
+
+/* Almennt: gera allt ljóst (Hyperspace er sjálfgefið dökkt) */
+body, input, select, textarea{
+  color: var(--text) !important;
+  background: #fff7fb !important; /* mjög ljósbleikt bakgrunnur */
+}
+
+h1,h2,h3,h4,h5,h6{ color: var(--text) !important; }
+p, li{ color: var(--muted) !important; }
+
+/* Sidebar (vinstri menu) ljósbleikt */
+#sidebar{
+  background: linear-gradient(135deg, var(--pink), var(--pink2)) !important;
+}
+#sidebar a{
+  color: rgba(255,255,255,0.95) !important; /* hvítur texti í menu */
+}
+#sidebar a:hover{
+  color: #ffffff !important;
+}
+
+/* Wrapper section litir (intro/projects/about/contact) */
+.wrapper.style1{ background: linear-gradient(135deg, var(--pink2), #ffe6f0) !important; }
+.wrapper.style2{ background: linear-gradient(135deg, #e9f7ff, #ffffff) !important; }
+.wrapper.style3{ background: linear-gradient(135deg, #e9fff8, #ffffff) !important; }
+
+/* “Projects” spotlights: gera content box-ið pastel (eins og flísarnar í myndinni) */
+#projects.spotlights > section:nth-child(1) .content{
+  background: linear-gradient(135deg, var(--pink), var(--pink2)) !important;
+  color: #fff !important;
+}
+#projects.spotlights > section:nth-child(2) .content{
+  background: linear-gradient(135deg, var(--blue), #a7ddf7) !important;
+  color: #fff !important;
+}
+#projects.spotlights > section:nth-child(3) .content{
+  background: linear-gradient(135deg, var(--lav), #d6c6f2) !important;
+  color: #fff !important;
+}
+#projects .content h2,
+#projects .content p{
+  color: #fff !important;
+}
+
+/* Smá “card” feel */
+.spotlights > section,
+.features section{
+  border-radius: 16px;
+  overflow: hidden;
+}
+.spotlights > section .content{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Takkar bleikir */
+.button,
+input[type="submit"],
+button{
+  background: var(--accent) !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 10px 24px rgba(255,77,166,0.18);
+}
+.button:hover,
+input[type="submit"]:hover,
+button:hover{
+  background: var(--accentHover) !important;
+}
+
+/* Form field (contact) ljóst */
+input[type="text"], input[type="email"], textarea{
+  background: rgba(255,255,255,0.9) !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  color: var(--text) !important;
+}
+
+/* Footer: bara neðst dökkt */
+#footer{
+  background: var(--footerBg) !important;
+  color: rgba(255,255,255,0.85) !important;
+}
+#footer a{ color: #ffd1ea !important; }
+/* Um mig layout */
+.about-split{
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.about-photo{
+  flex: 0 0 420px;
+  max-width: 420px;
+}
+
+.about-photo img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+}
+
+.about-content{
+  flex: 1;
+  min-width: 260px;
+}
+
+.about-points{
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.about-points li{
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  margin-bottom: 0.85rem;
+  background: rgba(255,255,255,0.28);
+  backdrop-filter: blur(6px);
+}
+
+/* Mobile */
+@media (max-width: 980px){
+  .about-split{ flex-direction: column; }
+  .about-photo{ max-width: 520px; width: 100%; }
+}
+/* Undirsíður (header + wrapper) — gera eins og forsíðan */
+
+#header{
+  background: linear-gradient(135deg, var(--pink), var(--pink2)) !important;
+}
+
+#header .title,
+#header nav a{
+  color: rgba(255,255,255,0.95) !important;
+}
+
+#header nav a:hover{
+  color: #ffffff !important;
+}
+
+/* Project/About síður nota oft bara .wrapper (ekki style1/2/3) */
+.wrapper{
+  background: #fff7fb !important; /* eða hvaða ljósbleika sem þú vilt */
+  color: var(--text) !important;
+}
+
+.wrapper.alt{
+  background: #fff7fb !important;
+}
+
+/* Textar á undirsíðum */
+.wrapper h1,
+.wrapper h2,
+.wrapper h3,
+.wrapper p,
+.wrapper li{
+  color: var(--text) !important;
+}
+/* --- About page layout --- */
+.about-split{
+  display:flex;
+  gap:2.5rem;
+  align-items:flex-start;
+}
+
+.about-photo{
+  flex:0 0 420px;
+  max-width:420px;
+}
+
+.about-photo img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:18px;
+  box-shadow:0 14px 35px rgba(0,0,0,0.12);
+}
+
+.about-card{
+  flex:1;
+  border-radius:18px;
+  padding:1.4rem 1.5rem;
+  background: linear-gradient(135deg, rgba(255,77,166,0.14), rgba(255,255,255,0.55));
+  box-shadow:0 14px 35px rgba(0,0,0,0.08);
+}
+
+.about-points{
+  list-style:none;
+  padding-left:0;
+  margin:1rem 0 1.25rem 0;
+}
+
+.about-points li{
+  padding:0.9rem 1rem;
+  border-radius:14px;
+  margin-bottom:0.8rem;
+  background: rgba(255,255,255,0.55);
+}
+
+/* “Staðreyndir” kort */
+.about-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.about-mini{
+  border-radius:16px;
+  padding:1.1rem 1.15rem;
+  background: linear-gradient(135deg, rgba(255,77,166,0.12), rgba(255,255,255,0.55));
+  box-shadow:0 10px 24px rgba(0,0,0,0.06);
+}
+
+.about-mini h3{
+  margin:0 0 0.35rem 0;
+}
+
+/* Mobile */
+@media (max-width: 980px){
+  .about-split{ flex-direction:column; }
+  .about-photo{ max-width:520px; width:100%; }
+  .about-grid{ grid-template-columns: 1fr; }
+}
+/* Minnkar myndir inni í texta á project/about síðum */
+#main .image.fit img{
+  max-width: 700px;     /* prófaðu 700–1000px */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Minnkar sjálft "ramma"/svæðið sem image-fit tekur */
+#main .image.fit{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Minnkar hæð spotlights blokkanna á forsíðunni */
+#projects.spotlights > section{
+  min-height: 18em;   /* prófaðu 14em–20em */
+}
+
+/* (valfrjálst) aðeins þrengri mynd, meira pláss fyrir texta */
+#projects.spotlights > section > .image{
+  width: 38%;
+}
+#projects.spotlights > section > .content{
+  width: 40%;
+}
+body.dark-mode {
+  background-color: #1a1a2e !important;
+  color: #f0e6f0 !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode b {
+  color: #f0d0e0 !important;
+}
+
+body.dark-mode a {
+  color: #e890b0 !important;
+}

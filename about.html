@@ -1,104 +1,94 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="en">
-	<head>
-		<title>About | Álfheiður Bjarnadóttir</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<div class="inner about-page">
+<script>
+  function toggleDark() {
+    document.body.classList.toggle('dark-mode');
+    const btn = document.getElementById('darkToggle');
+    btn.textContent = document.body.classList.contains('dark-mode') 
+      ? '☀️ Light Mode' 
+      : '🌙 Dark Mode';
+  }
+</script>
+  <h1 class="major">Um mig</h1>
+  <button id="darkToggle" onclick="toggleDark()" 
+  style="background: none; border: 2px solid #c0547a; color: #c0547a; 
+         padding: 6px 16px; border-radius: 20px; cursor: pointer; 
+         font-size: 13px; margin-bottom: 20px;">
+  🌙 Dark Mode
+</button>
+  <title>Um mig | Álfheiður Bjarnadóttir</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Álfheiður Bjarnadóttir</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="project1.html">Project 1</a></li>
-						<li><a href="about.html" class="active">About</a></li>
-						<li><a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
-						<li><a href="https://github.com/alligunn/Vefsida-AAG" target="_blank" rel="noopener">GitHub Repo</a></li>
-					</ul>
-				</nav>
-			</header>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">About Me</h1>
+  <div class="about-split">
+    <!-- Settu mynd af þér sem images/me.jpg (eða breyttu slóðinni) -->
 
-							<p>
-								My name is Álfheiður, I am 22 years old and I am studying mechanical engineering in the University of Iceland. 
-								This website is my portfolio where I document projects in VÉL608G Modern manufacturing processes.
-							</p>
 
-							<h2>Education</h2>
-							<ul>
-								<li><b>B.Sc. in Mechanical Engineering</b> — University of Iceland (2024–2026)</li>
-								<li><b>B.Sc. in Engineering Physics</b> — University of Iceland (2022–2025)</li>
-								<li><b>Exchange Semester in Physics</b> — Trinity College Dublin (Autumn 2024)</li>
-							</ul>
+    <div class="about-card">
+      <p>
+        Ég heiti Álfheiður Bjarnadóttir og er 22 ára. Ég stunda nám í vélaverkfræði við Háskóla Íslands. Ég útskrifaðist úr verkfræðilegri eðlisfræði B.S. vor 2025. Ég hef mikinn áhuga á sjálfbærri orku og kjarnorku. Ég á bleikan tannbursta og hef ekki borðað hvítan sykur í yfir 12 ár. Ég stefni á að fara í masters nám í Imperial í Renewable energy with AI and data science eða Berkeley í kjarnorkuverkfræði.
+      </p>
 
-							<h2>Experience</h2>
-							<ul>
-								<li>
-									<b>COWI (Part-time / Summer)</b> — Process/thermal work and engineering support (May 2025 – current)
-								</li>
-								<li>
-									<b>Teaching Assistant, Mathematical Analysis IV</b> — University of Iceland (Jan 2024 – current)
-								</li>
-							</ul>
+      <ul class="about-points">
+        <li><span style="color: #c0547a; font-weight: bold;">Markmið:</span> Master við Imperial í Renewable Energy með áherslu á AI og Data Science og 10 upphýfingar</li>
+        <li><span style="color: #c0547a; font-weight: bold;">Áhugasvið:</span> Sjálfbær orka, kjarnorka, stærðfræði.</li>
+        <li><span style="color: #c0547a; font-weight: bold;">Áhugamál:</span> Ræktin, spinning, horfa á píluna um jólin.</li>
+      </ul>
 
-							<h2>Skills</h2>
-							<ul>
-								<li><b>Programming:</b> Python, MATLAB, EES, LaTeX</li>
-								<li><b>Software:</b> ANSYS, AutoCAD, Autodesk Inventor, Microsoft Excel</li>
-								<li><b>Soft Skills:</b> Teamwork, communication, leadership, problem solving</li>
-							</ul>
+      <ul class="actions">
+        <li><a href="index.html#projects" class="button">Sjá verkefni</a></li>
+        <li><a href="CV.pdf" class="button primary" target="_blank" rel="noopener">Skoða CV (PDF)</a></li>
+      </ul>
+    </div>
+  </div>
 
-							<h2>Contact</h2>
-							<ul class="alt">
-								<li><b>Email:</b> <a href="mailto:alfabjarna@gmail.com">alfabjarna@gmail.com</a></li>
-								<li><b>Phone:</b> <a href="tel:+3548499268">+354 849-9268</a></li>
-								<li><b>LinkedIn:</b> <a href="https://linkedin.com/in/alfabjarna" target="_blank" rel="noopener">linkedin.com/in/alfabjarna</a></li>
-							</ul>
+  <h2>Staðreyndir</h2>
+  <div class="about-grid">
+    <div class="about-mini">
+      <h3>Upphýfingar</h3>
+      <p>Ég get gert tæpar 8 upphýfingar en markmiðið eru 10 upphýfingar.</p>
+    </div>
 
-							<ul class="actions">
-								<li><a href="cv.pdf" class="button primary" target="_blank" rel="noopener">Download CV (PDF)</a></li>
-								<li><a href="index.html" class="button">Back to Home</a></li>
-							</ul>
-						</div>
-					</section>
+    <div class="about-mini">
+      <h3>Tónlist</h3>
+      <p>Ég æfði á píano í 7 ár og tók miðprófið.</p>
+    </div>
 
-			</div>
+    <div class="about-mini">
+      <h3>Ferðalög</h3>
+      <p>Mér finnst ótrúlega skemmtilegt að ferðast og hef farið til yfir 20 landa.</p>
+    </div>
+  <hr />
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Álfheiður Bjarnadóttir. All rights reserved.</li>
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+<h2>Menntun</h2>
+<ul>
+  <li><span style="color: #c0547a; font-weight: bold;">B.Sc. í vélaverkfræði</span> — Háskóli Íslands (2024–2026)</li>
+  <li><span style="color: #c0547a; font-weight: bold;">B.Sc. í verkfræðilegri eðlisfræði</span> — Háskóli Íslands (2022–2025)</li>
+  <li><span style="color: #c0547a; font-weight: bold;">Skiptinám</span> — Trinity College Dublin (haust 2024)</li>
+</ul>
+<h2>Reynsla</h2>
+<ul>
+  <li><span style="color: #c0547a; font-weight: bold;">COWI (hlutastarf / sumar)</span> — ferli/varmavinna og verkfræðiaðstoð (maí 2025 – núna)</li>
+  <li><span style="color: #c0547a; font-weight: bold;">Dæmatímakennari, Stærðfræðigreining IV</span> — Háskóli Íslands (jan 2024 – núna)</li>
+</ul>
+<h2>Hæfni</h2>
+<ul>
+  <li><span style="color: #c0547a; font-weight: bold;">Forritun:</span> Python, MATLAB, EES, LaTeX</li>
+  <li><span style="color: #c0547a; font-weight: bold;">Annar hugbúnaður:</span> ANSYS, AutoCAD, Autodesk Inventor, Excel</li>
+  <li><span style="color: #c0547a; font-weight: bold;">Önnur færni:</span> Samvinna, samskipti, forysta, lausnamiðuð hugsun</li>
+</ul>
+<h2>Samband</h2>
+<ul class="alt">
+  <li><span style="color: #c0547a; font-weight: bold;">Tölvupóstur:</span> <a href="mailto:alfabjarna@gmail.com">alfabjarna@gmail.com</a></li>
+  <li><span style="color: #c0547a; font-weight: bold;">Sími:</span> <a href="tel:+3548499268">+354 849-9268</a></li>
+  <li><span style="color: #c0547a; font-weight: bold;">LinkedIn:</span> <a href="https://linkedin.com/in/alfabjarna" target="_blank" rel="noopener">linkedin.com/in/alfabjarna</a></li>
+</ul>
+  <ul class="actions">
+    <li><a href="CV.pdf" class="button primary" target="_blank" rel="noopener">Skoða CV (PDF)</a></li>
+    <li><a href="index.html" class="button">Til baka</a></li>
+  </ul>
+</div>

@@ -2,27 +2,34 @@
 <!--
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Frjálst til persónulegra og viðskiptalegra nota undir CCA 3.0 leyfi (html5up.net/license)
 -->
 <html lang="en">
 	<head>
-		<title>Project 1 - Hyperspace by HTML5 UP</title>
+		
+		<title>Verkefni 1 - Hyperspace eftir HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Hyperspace</a>
+				<a href="index.html" class="title">Álfheiður Bjarnadóttir</a>
 				<nav>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="project1.html" class="active">Project 1</a></li>
-						<li><a href="about.html">About</a></li>
-
+						<li><a href="index.html">Heim</a></li>
+				<li><a href="project1.html" class="active">Verkefni 1</a></li>
+				<li><a href="project2.html" >Verkefni 2</a></li>
+				<li><a href="project3.html">Verkefni 3</a></li>
+				<li><a href="about.html">Um mig</a></li>
+				<li><a href="CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
+				<li><a href="https://github.com/alfabjarna/Vefsida-AAG" target="_blank" rel="noopener">GitHub safn</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -33,98 +40,138 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Project 1</h1>
+							<h1 class="major">Verkefni 1</h1>
+							<button id="darkToggle" onclick="toggleDark()" 
+									style="background: none; border: 2px solid #c0547a; color: #c0547a; 
+										   padding: 6px 16px; border-radius: 20px; cursor: pointer; 
+										   font-size: 13px; margin-bottom: 20px;">
+								🌙 Dark mode
+							</button>
 
 							<p>
-								This page documents the steps I took to build and publish my portfolio website for this course.
-								The site is based on the <b>Hyperspace</b> template by HTML5 UP.
+								Þessi síða skráir þau skref sem ég tók til að byggja og birta ferilvefinn minn fyrir þetta námskeið.
+								Síðan byggir á <b>Hyperspace</b> sniðmáti frá HTML5 UP.
 							</p>
 
 							<hr>
 
-							<h2>1. Template source &amp; decision making</h2>
-							<p>Firstly, I watched the YouTube videosI explored different HTML5 UP templates and chose <b>Hyperspace</b> because it is clean, has a nice vibe to it, responsive,
-								and has a sidebar navigation that works well for a portfolio (Home, Projects, About, Contact).
+							<h2>1. Uppruni sniðmáts &amp; ákvarðanataka</h2>
+							<p>Fyrst horfði ég á YouTube myndbönd. Ég skoðaði mismunandi HTML5 UP sniðmát og valdi <b>Hyperspace</b> vegna þess að það er hreint, hefur skemmtilegan stíl, er aðlögunarhæft,
+								og hefur hliðarvalmynd sem virkar vel fyrir ferilvef (Heim, Verkefni, Um mig, Hafa samband).
 							</p>
 
 							<!-- Screenshot example -->
-							<span class="image fit"><img src="images/hypermynd.png" alt="The Hyperspace template"></span>
-							<p><i>Figure 1: The Hyperspace template from HTML5 UP.</i></p>
-							<h2>2. Initial design assumptions</h2>
+							<span class="image fit"><img src="images/hypermynd.png" alt="Hyperspace sniðmátið"></span>
+							<p><i>Mynd 1: Hyperspace sniðmátið frá HTML5 UP.</i></p>
+							<p>
+								Ég horfi á eitt myndband á Youtube og fann síðan síðuna <a href="https://docs.phcode.dev/docs/phoenix-pro-school" target="_blank" rel="noopener">
+					Pheonix code help </a>sem ég notaði til að hjálpa mér að breyta ýmsu í Phoenix kóðanum til að betrum bæta síðuna. Einnig notaði ég mikið gervigreind til að hájlpa mér ef ég stóð föst á einhverju.
+								<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+
+							<iframe 
+							src="https://www.youtube.com/embed/JfDa07tpTJo"
+							style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+							allowfullscreen>
+							</iframe>
+		</div>
+</div>
+
+
+							<h2>2. Upphaflegar hönnunarforsendur</h2>
 							<ul>
-								After opening the template in Phoenix Code, I started customizing it by replacing the placeholder content with my own text and links. I also adjusted the structure and layout to match my preferences and to make sure all required information for the assignment would be included and easy to find.
-								<li><b>Navigation:</b> Sidebar links on the home page scroll to sections (Projects / About / Contact).</li>
-								<li><b>Subpages:</b> Each project has a “Learn more” button leading to a separate page (e.g. <code>project1.html</code>).</li>
-								<li><b>Consistency:</b> I kept the template’s styling so all pages look consistent on desktop and mobile.</li>
-								<li><b>Content structure:</b> Projects first (quick overview), then About/Resume, then Contact.</li>
-								The next step was to rename the generic.html file to project1.html. I then copied this file a few times to use as a starting point for the next assignments. After that, I edited the navigation so the project pages could be accessed from the menu.
+								Eftir að hafa opnað sniðmátið í Phoenix Code byrjaði ég að sérsníða það með því að skipta út staðgengilstexta fyrir minn eigin texta og tengla. Ég breytti einnig uppbyggingu og útliti til að passa við mínar óskir og til að tryggja að allar nauðsynlegar upplýsingar fyrir verkefnið væru með og auðvelt væri að finna þær.
+								<li><b>Valmynd:</b> Hliðarvalmynd á forsíðu sem flettir að köflum (Verkefni / Um mig / Hafa samband).</li>
+								<li><b>Undirsíður:</b> Hvert verkefni hefur „Lesa meira“ hnapp sem leiðir á sérstaka síðu (t.d. <code>project1.html</code>).</li>
+								<li><b>Samræmi:</b> Ég hélt stíl sniðmátsins svo allar síður líti eins út á tölvu og í síma.</li>
+								<li><b>Uppbygging efnis:</b> Verkefni fyrst (stutt yfirlit), síðan Um mig/CV, og svo Hafa samband.</li>
+								Næsta skref var að endurnefna skrána generic.html í project1.html. Ég afritaði þessa skrá nokkrum sinnum til að nota sem grunn fyrir næstu verkefni. Eftir það breytti ég valmyndinni svo hægt væri að nálgast verkefnasíðurnar úr henni.
 								
 							</ul>
 
-							<span class="image fit"><img src="images/mynd2.png" alt="Website structure and navigation"></span>
-							<p><i>Figure 2: Project 1.</i></p>
-							<p> Next, I worked on the front page banner. I added my name and a short description under it explaining what the website contains. Below that, there is a button that I decided to link to the Project page, there you can find all the projects. if you would to press one of the projects it should lead you to a more detailed discription of the project.</p> Next, I worked on the front page banner. I added my name and a short description under it explaining what the website contains. Below that, there is a button that I decided to link to the Project page, there you can find all the projects. if you would to press one of the projects it should lead you to a more detailed discription of the project.<p>
-							<span class="image fit"><img src="images/front.png" alt="Website structure and navigation"></span>
-							<p><i>Figure 2: Front banner.</i></p>
-							<p>I added both an About Me section and a Contact section to better fit the purpose of the website. I initially had difficulties linking my CV correctly, so I used an AI assistant to troubleshoot the issue. After following the suggested steps, I successfully added a working CV download link.</p>
-							<span class="image fit"><img src="images/CV.png" alt="Website structure and navigation"></span>
-							<p><i>Figure 2: Code to add a working CV download link.</i></p>
+							<span class="image fit"><img src="images/mynd2.png" alt="Uppbygging og valmynd vefsíðu"></span>
+							<p><i>Mynd 2: Verkefni 1.</i></p>
+
+							<p> Næst vann ég að borðanum á forsíðunni. Ég bætti við nafninu mínu og stuttri lýsingu undir því sem útskýrir hvað vefsíðan inniheldur. Fyrir neðan er hnappur sem ég ákvað að tengja við verkefnasíðuna þar sem öll verkefnin eru. Ef ýtt er á eitt verkefni ætti það að leiða á ítarlegri lýsingu á verkefninu.</p> 
 							
-							<p>Finally, I added images to the Project 1 section on the front page and to the Project 1 page itself. This was the part I found the most challenging. At first, when I inserted the first image, it was too large and didn’t fit the layout properly. I used a method I found on W3Schools, which has clear and helpful HTML guides. I checked the image’s original width and height in its properties and then resized it while keeping the proportions, so it would display at the size I wanted.
+
+							<span class="image fit"><img src="images/front.png" alt="Uppbygging og valmynd vefsíðu"></span>
+							<p><i>Mynd 2: Forsíðuborði.</i></p>
+
+							<p>Ég bætti bæði við Um mig kafla og Hafa samband kafla til að passa betur við tilgang vefsíðunnar. Ég átti í fyrstu í erfiðleikum með að tengja CV skjalið mitt rétt, svo ég notaði gervigreindaraðstoð til að finna lausn á vandanum. Eftir að hafa fylgt leiðbeiningunum tókst mér að bæta við virkum niðurhalstengli fyrir CV.</p>
+
+							<span class="image fit"><img src="images/CV.png" alt="Uppbygging og valmynd vefsíðu"></span>
+							<p><i>Mynd 2: Kóði til að bæta við virkum niðurhalstengli fyrir CV.</i></p>
+							
+							<p> Að lokum bætti ég við myndum í Verkefni 1 hlutann á forsíðunni og einnig á Verkefni 1 síðuna sjálfa. Þetta var sá hluti sem mér fannst erfiðastur. Í fyrstu, þegar ég setti inn fyrstu myndina, var hún of stór og passaði ekki rétt í útlitið. Ég notaði aðferð sem ég fann á W3Schools, sem hefur skýrar og gagnlegar HTML leiðbeiningar. Ég skoðaði upprunalega breidd og hæð myndarinnar í eiginleikum hennar og breytti síðan stærðinni á meðan hlutföllin héldust, þannig að hún birtist í þeirri stærð sem ég vildi.
 								
 								&nbsp;</p>
+
 							<p>
-								I collected screenshots while working (code, folder structure, and GitHub Pages settings).
-								I resized images to web friendly sizes (around 1200px width) and saved them as JPG/PNG to keep loading times fast.
-								All images were placed in <code>images/</code> and linked using relative paths.
-							</p>
-							<span class="image fit"><img src="images/myndir.png" alt="Website structure and navigation"></span>
-							<p><i>Figure 2: Code to make my image fit the right way.</i></p>
-							<h2>3. What do I want to get out of the course?</h2>
-							<p>
-								I’m not completely sure what to expect from this course yet, except that I hope it will be fun and a bit different from most of the other Mechanical Engineering courses. I’m looking forward to trying out different computer aided manufacturing processes, such as laser cutting and milling. When it comes to the final project, I haven’t decided what I want to do yet. I have not looked into a lot about the possibilities so far, but I would like to make something that feels creative, interesting, and genuinely enjoyable to work on.
+								Ég safnaði skjáskotum á meðan ég vann (kóði, möppuskipan og GitHub Pages stillingar).
+								Ég minnkaði myndir í vefvænar stærðir (um 1200px breidd) og vistaði þær sem JPG/PNG til að halda hleðslutíma stuttum.
+								Allar myndir voru settar í <code>images/</code> og tengdar með hlutfallslegum slóðum.
 							</p>
 
-							<h2>4. Tools and information sources</h2>
+							<span class="image fit"><img src="images/myndir.png" alt="Uppbygging og valmynd vefsíðu"></span>
+							<p><i>Mynd 2: Kóði til að láta mynd passa rétt.</i></p>
+							<p>
+								Að lokum breytti ég úr fjólubláa litnum yfir í mismunandi bleikan og bætti við "Dark mode" hnapp svo ef það er erfitt að lesa svona bjart þá er hægt að skipta í dekkri lýsingu
+							</p>
+							<h2>3. Hvað vil ég fá út úr námskeiðinu?</h2>
+							<p>
+								Ég er ekki alveg viss hvað ég á að búast við af þessu námskeiði ennþá, nema að ég vona að það verði skemmtilegt og svolítið öðruvísi en flest önnur námskeið í vélaverkfræði. Ég hlakka til að prófa mismunandi tölvustudd framleiðsluferli, eins og laserskurð og fræsingu. Þegar kemur að lokaverkefninu hef ég ekki enn ákveðið hvað ég vil gera. Ég hef ekki skoðað möguleikana mjög mikið enn, en mig langar að búa til eitthvað sem er skapandi, áhugavert og virkilega skemmtilegt að vinna að.
+							</p>
+							
+							<h2>4. Verkfæri og upplýsingagjafar</h2>
 							<ul>
-								<li><b>Phoenix Code</b> for editing HTML/CSS</li>
-								<li><b>HTML5 UP</b> template files</li>
-								<li><b>Browser preview</b> for testing layout and responsiveness</li>
-								<li>Online documentation (e.g., HTML/CSS references) when needed</li>
+								<li><b>Phoenix Code</b> til að breyta HTML/CSS</li>
+								<li><b>HTML5 UP</b> sniðmátsskrár</li>
+								<li><b>Forskoðun í vafra</b> til að prófa útlit og aðlögunarhæfni</li>
+								<li>Upplýsingar á netinu (t.d. HTML/CSS heimildir) þegar þörf var á</li>
 							</ul>
 
 							<hr>
 
-							<h2>5. Uploading to GitHub (GitHub Pages)</h2>
+							<h2>5. Hlaða upp á GitHub (GitHub Pages)</h2>
 							<p>
-								First, I watched the instructional videos provided by the teacher to understand how to upload a website to GitHub and publish it with GitHub Pages. After that, I opened the official Git installation page for macOS <code>git-scm.com/install/mac</code>. Since the page recommended Homebrew, I installed Homebrew through the Terminal.
+								Fyrst horfði ég á kennslumyndböndin sem kennarinn gaf til að skilja hvernig á að hlaða vefsíðu upp á GitHub og birta hana með GitHub Pages. Eftir það opnaði ég opinberu Git uppsetningarsíðuna fyrir macOS <code>git-scm.com/install/mac</code>. Þar sem síðan mælti með Homebrew setti ég upp Homebrew í gegnum Terminal.
 							</p>
 
-							<span class="image fit"><img src="images/install.png" alt="GitHub Pages settings"></span>
-							<p><i>Figure 4: GitHub Pages settings used to publish the website.</i></p>
+							<span class="image fit"><img src="images/install.png" alt="GitHub Pages stillingar"></span>
+							<p><i>Mynd 4: GitHub Pages stillingar sem notaðar voru til að birta vefsíðuna.</i></p>
+
 							<p>
-								After Homebrew was installed, I followed the instructions to install Git using the command brew install git. During this step I ran into some issues with my terminal configuration (PATH/profile), which prevented the commands from working correctly at first. I asked for help from AI and fixed the problem by adding the Homebrew shell environment setup and confirming that Homebrew was recognized in the terminal.
+								Eftir að Homebrew var sett upp fylgdi ég leiðbeiningunum til að setja upp Git með skipuninni brew install git. Í þessu skrefi lenti ég í vandamálum með stillingar í terminal (PATH/profile) sem komu í veg fyrir að skipanirnar virkuðu rétt í fyrstu. Ég bað gervigreind um hjálp og lagaði vandann með því að bæta við Homebrew shell environment stillingum og staðfesta að Homebrew væri viðurkennt í terminal.
 							</p>
-							<span class="image fit"><img src="images/git.png" alt="GitHub Pages settings"></span>
-							<p><i>Figure 4: GitHub Pages settings used to publish the website.</i></p>
+
+							<span class="image fit"><img src="images/git.png" alt="GitHub Pages stillingar"></span>
+							<p><i>Mynd 4: GitHub Pages stillingar sem notaðar voru til að birta vefsíðuna.</i></p>
+
 							<p>
-								Once Git was installed successfully, the next step was to initialize a Git repository inside my website folder, commit the files, and push everything to GitHub. After uploading the project to a GitHub repository, I enabled GitHub Pages under Settings → Pages and selected the main branch as the source. This published the site online and generated a public link.
+								Þegar Git hafði verið sett upp með góðum árangri var næsta skref að frumstilla Git geymslu inni í möppunni með vefsíðunni minni, gera commit á skrárnar og senda allt á GitHub. Eftir að hafa hlaðið verkefninu upp í GitHub geymslu virkjaði ég GitHub Pages undir Settings → Pages og valdi main branch sem uppsprettu. Þetta birti síðuna á netinu og bjó til opinberan tengil.
 							</p>
-							<h3>Challenges and solutions</h3>
+
+							<p>
+							Eftir að fyrstu útgáfu vefsíðunnar var lokið bjó ég til repository á GitHub og hlóð verkefninu upp með Git í Terminal. Ég gerði þetta með því að búa til aðgang á GitHub og þar bjó ég til nýtt repository. Ég frumstillti repositoryið staðbundið, bætti við öllum skrám, gerði fyrsta commit og sendi síðan verkefnið á GitHub. Þar sem GitHub styður ekki lengur lykilorðastaðfestingu fyrir Git aðgerðir bjó ég til Personal Access Token og notaði það til auðkenningar við push. Eftir að skrárnar voru hlaðnar upp virkjaði ég GitHub Pages undir Settings → Pages og stillti uppsprettuna á main branch. Þetta birti vefsíðuna og bjó til opinberan tengil. Að lokum bætti ég tengli á GitHub repositoryið mitt á vefsíðuna svo auðvelt sé að finna það. Hér fyrir neðan má sjá kóðann sem var notaður í terminal til að vista verkefnið á GitHub.</p>
+
+							<span class="image fit"><img src="images/final.png" alt="GitHub Pages stillingar"></span>
+							<p><i>Mynd 4: Kóði í terminal til að setja upp skrána á GitHub.</i></p>
+							
+							<h3>Áskoranir og lausnir</h3>
 							<ul>
-								<li><b>Preview issues:</b> Fixed by opening the full folder as a project (not a single file) in the editor.</li>
-								<li><b>Broken styling/images:</b> Fixed by keeping the original folder structure (<code>assets/</code>, <code>images/</code>) and checking paths.</li>
-								<li><b>Updates not showing:</b> Solved by committing/pushing changes and refreshing the page (hard reload if needed).</li>
+								<li><b>Forskoðunarvandamál:</b> Lagað með því að opna alla möppuna sem verkefni (ekki bara eina skrá) í ritlinum.</li>
+								<li><b>Brotinn stíll/myndir:</b> Lagað með því að halda upprunalegri möppuskipan (<code>assets/</code>, <code>images/</code>) og athuga slóðir.</li>
+								<li><b>Uppfærslur sjást ekki:</b> Leyst með því að commit-a/push-a breytingar og endurhlaða síðuna (hard reload ef þarf).</li>
 							</ul>
 
-							<h2>6. Repository link</h2>
+							<h2>6. Tengill á geymslu</h2>
 							<p>
-								GitHub repository: <a href="https://github.com/alligunn/Vefsida-AAG" target="_blank" rel="noopener">github.com/alligunn/Vefsida-AAG</a>
+								GitHub geymsla: <a href="https://github.com/alfabjarna/Vefsida-AAG" target="_blank" rel="noopener">GitHub Repository</a>
 							</p>
 
 							<ul class="actions">
-								<li><a href="index.html" class="button">Back to Home</a></li>
-								<li><a href="https://github.com/alligunn/Vefsida-AAG" class="button" target="_blank" rel="noopener">Open Repository</a></li>
+								<li><a href="index.html" class="button">Til baka á forsíðu</a></li>
+								<li><a href="https://github.com/alfabjarna/Vefsida-AAG" class="button" target="_blank" rel="noopener">Opna geymslu</a></li>
 							</ul>
 								
 						</div>
@@ -135,7 +182,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Án titils. Öll réttindi áskilin.</li><li>Hönnun: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -148,6 +195,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 
+    <script>
+      function toggleDark() {
+        document.body.classList.toggle('dark-mode');
+        const btn = document.getElementById('darkToggle');
+        btn.textContent = document.body.classList.contains('dark-mode') 
+          ? '☀️ Light Mode' 
+          : '🌙 Dark Mode';
+      }
+    </script>
 	</body>
 </html>

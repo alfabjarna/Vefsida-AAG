@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="is">
+<head>
+	<title>Verkefni 2 | Álfheiður Bjarnadóttir</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">Álfheiður Bjarnadóttir</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Heim</a></li>
+				<li><a href="project1.html">Verkefni 1</a></li>
+				<li><a href="project2.html">Verkefni 2</a></li>
+				<li><a href="project3.html" class="active">Verkefni 3</a></li>
+				<li><a href="about.html">Um mig</a></li>
+				<li><a href="CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
+				<li><a href="https://github.com/alfabjarna/Vefsida-AAG" target="_blank" rel="noopener">GitHub Repo</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+
+				<h1 class="major">Verkefni 3</h1>
+
+				<p>
+					Markmið verkefnisins er að hanna lítið módel fyrir 3D prentun sem ekki væri hægt að framkvæma með frádráttarframleiðslu (additive vs subtractive).
+					Einnig átti að framkvæma prófanir á 3D prentara til að ákvarða hönnunarreglur og skorður áður en módelið var prentað.
+					Að lokum átti að 3D skanna einhvern hlut og útskýra hvað ég lærði af ferlinu.
+				</p>
+
+				<hr />
+
+				<h2>3D prentun</h2>
+				<p>
+					Í þessu verkefni áttum við að hanna lítið módel fyrir 3D prentun sem ekki væri hægt að framkvæma með frádráttar framleiðslu (additive vs subtractive).
+					Við áttum að hanna og framkvæma prófanir á 3D prentaranum til að ákvarða hönnunarreglur og skorður áður en módelið er prentað.
+					Að lokum áttum við að prenta hlutinn (max 100g af plasti skv. slicer) og 3D skanna einhvern hlut.
+				</p>
+
+				<p>
+					Ég ákvað að hanna lítið geymslubox fyrir bómullarskífur og Q-tips. Hugmyndin var að gera box sem væri bæði nytsamlegt og fallegt,
+					en um leið nýta möguleika 3D prentunar til fulls.
+				</p>
+
+				<span class="image fit" style="max-width: 500px; margin: 0 auto;">
+					<img src="images/3dpinterest.jpg" alt="Pinterest mynd af módelinu" />
+				</span>
+				<p><i>Mynd 1: Pinterest mynd af módelinu sem líkt er eftir</i></p>
+
+				<p>Boxið var hannað þannig að það inniheldur:</p>
+				<ul>
+					<li>Tvö aðskilin hólf</li>
+					<li>Bogadregna innri veggi</li>
+					<li>Innbyggt lok</li>
+					<li>Holrými og flókna ytri veggi</li>
+				</ul>
+
+				<p>
+					Þessi hönnun væri ekki einföld í framkvæmd með frádráttarframleiðslu. Þó að hún sé ekki algjörlega ómöguleg, myndi hún vera bæði flókin
+					og óhagkvæm að framleiða með hefðbundnum fræsiaðferðum. Ástæðurnar eru meðal annars þær að hönnunin inniheldur innri holrými sem ekki er hægt
+					að nálgast með fræsara. Einnig eru yfirhangandi form sem myndu líklega krefjast þess að hluturinn væri framleiddur í mörgum smærri hlutum og síðan
+					settur saman eftir á.
+				</p>
+				<p>
+					Ég valdi eftirfarandi parametra út frá því að þvermál bómul skífa sé u.þ.b. 60 mm. Parametrar eru hér fyrir neðan. 
+				</p>
+				<span class="image fit" style="max-width: 500px; margin: 0 auto;">
+					<img src="images/parameter_3dprent.jpeg" alt="Atóm mynd tilbúin í Inkscape" />
+				</span>
+				<p>
+					Ég passaði að hönnunin myndi ekki fara yfir 100g samkvæmt slicer viðmátaði og reiknaði því út hvað mín hönnun mætti u.þ.b. vera stór með formúlunni:
+				V_ring = πh(R_out^2−R_in^2) og V_botn = πr^2t þar sem t er þykkt og h er hæð. Einnig þurfti að athuga rúmmál rifflana sérstaklega en það var gert með V_rifflur = (hπ(t/2)^2)/2 * number_of_rifflur. Einnig þyrfti að að reikna fyrir 1 og 2/3 úr hring þar sem boxið er sameinað 
+					úr tveimur hringjum.
+				</p>
+				<p>
+					Samtals fæst u.þ.b. 79.972 mm^3 en PLA = 1.24g/cm^3 þ.a. 79.97*1.24 = 99g. Sem er vissulega mjög tæpt. Svo til öryggis minnkum við hæð um 10mm til að vera örugg um að við séum innan marka. Loka útkoman er hér fyrir neðan í bútum og 3d mynd.
+				</p>
+				<p>
+					Heppilega var hæð boxins í parametrum þar sem ég endaði á að minnka hana til að vera örugg um að ég færi ekki yfir hámarks þyngd.
+				</p>
+				
+
+				<span class="image fit" style="max-width: 500px; margin: 0 auto;">
+					<img src="images/3d.png" alt="Atóm mynd tilbúin í Inkscape" />
+				</span>
+				<p><i>Mynd 3: Skref fyrir skref teikning í Fusion.</i></p>
+				<iframe
+						src="https://a360.co/4rVTTxF" 
+						width="100%" 
+							height="500px" 
+						allowfullscreen 
+						style="border: none; border-radius: 8px;">
+				</iframe>
+				<p>
+					Þá var komið að því að setja boxið inn í PrusaSlicer til þess að ég gæti prentað það út.
+					Ég byrjaði á því að hlaða niður PrusaSlicer héðan:
+					<a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank" rel="noopener noreferrer">PrusaSlicer</a>. Ég hlóð niður Fusion 360 skjalinu inn í forritið og lagaði stillingar.
+				</p>
+				
+				<span class="image fit" style="max-width: 500px; margin: 0 auto;">
+					<img src="images/3d.png" alt="Atóm mynd tilbúin í Inkscape" />
+				</span>
+				<p>
+					Áður en ég prentaði út hönnunina ákvað ég að gera prufuprentun til að átta mig betur á hvernig 3D prentarinn virkar og sjá hvort að rifflurnar prentist ekki vel út. Ég hlóð niður hönnunina í PrusaSlicer og skar svo 85% af boxinu, svo eftir stóð bara lítill standur. Ég minnkaði einnig hönnunina í 80% svo prentunin tæki styttri tíma. Prentunin tók 45 mín og var framvæmd án stuðningsefnis, með 15% infill. 
+				</p>
+				<div style="display: flex; gap: 16px;">
+					<span class="image fit" style="flex: 1;">
+						<img src="images/prufa1.png" alt="Description 1" />
+					</span>
+					<span class="image fit" style="flex: 1;">
+						<img src="images/prufa2.png" alt="Description 2" />
+					</span>
+				</div>
+				<p>
+				Prufan kom vel út og ég var afskaplega ánægð svo ég ákvað að henda bara í 3D prentun á loka hönnuninni. Prentunin á lokahönnuninni tók rúmmlega 7 klukkutíma en það kom mjög vel út og ég var meira sátt en ég bjóst við.
+				</p>
+				<span class="image fit" style="max-width: 500px; margin: 0 auto;">
+					<img src="images/lokav3.png" alt="Atóm mynd tilbúin í Inkscape" />
+				</span>
+				<h2>3D skönnun</h2>
+				<p>
+					Fyrir 3D skönnunina notaði ég forritið Polycam. Forritið gerir 3D skönnun einstaklega einfalda. Ég ákvað að skanna 
+				</p>
+			</div>
+			
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Álfheiður Bjarnadóttir. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
