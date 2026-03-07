@@ -272,16 +272,125 @@ body.dark-mode {
   background-color: #1a1a2e !important;
   color: #f0e6f0 !important;
 }
+/* ══════════════════════════════════
+   DARK MODE — high-specificity overrides
+   ══════════════════════════════════ */
 
+/* Base body + inputs */
+body.dark-mode,
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background: #1a1a2e !important;
+  color: #f0e6f0 !important;
+}
+
+/* Sidebar */
+body.dark-mode #sidebar {
+  background: #111 !important;
+}
+body.dark-mode #sidebar a,
+body.dark-mode #sidebar nav ul li a {
+  color: #e890b0 !important;
+}
+body.dark-mode #sidebar a:hover {
+  color: #fff !important;
+}
+
+/* Header (subpages) */
+body.dark-mode #header {
+  background: #111 !important;
+}
+
+/* All wrapper style variants */
+body.dark-mode .wrapper,
+body.dark-mode .wrapper.style1,
+body.dark-mode .wrapper.style2,
+body.dark-mode .wrapper.style3,
+body.dark-mode .wrapper.alt {
+  background: #1a1a2e !important;
+}
+
+/* Project spotlight content boxes (overrides the pastel gradients) */
+body.dark-mode #projects.spotlights > section:nth-child(1) .content,
+body.dark-mode #projects.spotlights > section:nth-child(2) .content,
+body.dark-mode #projects.spotlights > section:nth-child(3) .content {
+  background: #16213e !important;
+}
+
+/* All text */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
 body.dark-mode p,
 body.dark-mode li,
-body.dark-mode b {
+body.dark-mode b,
+body.dark-mode span,
+body.dark-mode label,
+body.dark-mode #projects .content h2,
+body.dark-mode #projects .content p {
   color: #f0d0e0 !important;
 }
 
+/* Links */
 body.dark-mode a {
+  color: #e890b0 !important;
+}
+body.dark-mode a:hover {
+  color: #ffffff !important;
+}
+
+/* Buttons (overrides the pink accent buttons) */
+body.dark-mode .button,
+body.dark-mode input[type="submit"],
+body.dark-mode button {
+  background: transparent !important;
+  border: 2px solid #e890b0 !important;
+  color: #e890b0 !important;
+  box-shadow: none !important;
+}
+body.dark-mode .button:hover,
+body.dark-mode input[type="submit"]:hover,
+body.dark-mode button:hover {
+  background: #e890b0 !important;
+  color: #1a1a2e !important;
+}
+
+/* Form inputs */
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode textarea {
+  background: #16213e !important;
+  border: 1px solid #555 !important;
+  color: #f0d0e0 !important;
+}
+
+/* About section cards */
+body.dark-mode .about-points li,
+body.dark-mode .about-card,
+body.dark-mode .about-mini {
+  background: rgba(255,255,255,0.05) !important;
+}
+
+/* Social icons */
+body.dark-mode ul.icons li a {
+  border-color: #e890b0 !important;
+  color: #e890b0 !important;
+}
+body.dark-mode ul.icons li a:hover {
+  background: #e890b0 !important;
+  color: #1a1a2e !important;
+}
+
+/* Footer */
+body.dark-mode #footer {
+  background: #111 !important;
+  color: #f0d0e0 !important;
+}
+body.dark-mode #footer a,
+body.dark-mode #footer li {
   color: #e890b0 !important;
 }
