@@ -394,3 +394,66 @@ body.dark-mode #footer a,
 body.dark-mode #footer li {
   color: #e890b0 !important;
 }
+/* ══════════════════════════════════
+   PROJECT 3 — Baby yellow & pink theme
+   ══════════════════════════════════ */
+
+body:has(#main) .wrapper#main,
+body:has(#main) #main.wrapper {
+  background: linear-gradient(150deg,  #fff176   0%, #ffb3c6 100%) !important;
+}
+
+body:has(#main) #main .inner h1.major {
+  color: #ff6b9d !important;
+  text-shadow: 1px 1px 0px #ffe066 !important;
+}
+
+body:has(#main) #main .inner h1.major::after {
+  background: #f0d0e0 !important;
+}
+
+body:has(#main) #main .inner h2 {
+  color: #ff6b9d !important;
+}
+
+body:has(#main) #main .inner p,
+body:has(#main) #main .inner li {
+  color: #5a2a3a !important;
+}
+
+body:has(#main) #main .inner a {
+  color: #ff6b9d!important;
+}
+
+body:has(#main) #main .inner a:hover {
+  color: #ff6b9d !important;
+}
+
+body:has(#main) #main .inner .actions .button {
+  background: #ffe066 !important;
+  color: #8a4a00 !important;
+  border: 2px solid #ffd700 !important;
+  border-radius: 25px !important;
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.3) !important;
+}
+
+body:has(#main) #main .inner .actions .button:hover {
+  background: #ffd700 !important;
+}
+
+body:has(#main) .embedded-site > a {
+  background: #f0d0e0 !important;
+  color: #fff !important;
+  border-radius: 25px !important;
+  font-weight: 700 !important;
+  
+
+body:has(#main) .embedded-site > a:hover {
+  background: #ff6b9d !important;
+}
+
+body:has(#main) .embedded-site iframe {
+  border: 3px solid #ff6b9d !important;
+  border-radius: 16px !important;
+  box-shadow: 0 6px 24px rgba(255, 107, 157, 0.25) !important;
+}
